@@ -1,5 +1,8 @@
 import { useState } from 'react';
 import { useCart } from '../context/CartContext';
+import coconutShellBowlSet from '../assets/coconut-shell-bowl-set.png';
+import bambooTravelMug from '../assets/bamboo-travel-mug.png';
+import bambooComb from '../assets/bamboo-comb.png';
 
 const products = [
   // ── Coconut Shell Products ──
@@ -8,7 +11,7 @@ const products = [
     name: 'Coconut Shell Bowl Set',
     desc: 'Hand-polished natural coconut shell bowls. Set of 4 with wooden spoons.',
     price: '₹899',
-    image: 'https://images.unsplash.com/photo-1625943553852-781c6dd46faa?auto=format&fit=crop&w=600&q=80',
+    image: coconutShellBowlSet,
     badge: 'Best Seller',
     category: 'Kitchen',
   },
@@ -96,6 +99,15 @@ const products = [
     badge: 'Natural',
     category: 'Personal Care',
   },
+  {
+    id: 19,
+    name: 'Bamboo Wide-Tooth Comb',
+    desc: 'Smooth, wide-tooth bamboo comb that gently detangles hair and is plastic-free.',
+    price: '₹279',
+    image: bambooComb,
+    badge: 'Plastic-Free',
+    category: 'Personal Care',
+  },
   // ── Glass & Ceramics ──
   {
     id: 11,
@@ -106,7 +118,7 @@ const products = [
     badge: 'Artisan',
     category: 'Home Decor',
   },
-  {
+  /*{
     id: 12,
     name: 'Terracotta Planter Set',
     desc: 'Set of 3 handmade terracotta planters with saucers. Perfect for herbs.',
@@ -114,7 +126,7 @@ const products = [
     image: 'https://images.unsplash.com/photo-1459411552884-841db9b3cc2a?auto=format&fit=crop&w=600&q=80',
     badge: 'Handmade',
     category: 'Garden',
-  },
+  },*/
   // ── Stationery ──
   {
     id: 13,
@@ -134,17 +146,7 @@ const products = [
     badge: 'Recycled',
     category: 'Stationery',
   },
-  // ── Textiles ──
-  {
-    id: 15,
-    name: 'Organic Cotton Towels',
-    desc: 'Soft, chemical-free bath towels dyed with plant-based colors. Set of 2.',
-    price: '₹749',
-    image: 'https://images.unsplash.com/photo-1616627547584-bf28cee262db?auto=format&fit=crop&w=600&q=80',
-    badge: 'Organic',
-    category: 'Bath',
-  },
-  {
+  /*{
     id: 16,
     name: 'Hemp Yoga Mat',
     desc: 'Natural hemp and rubber yoga mat. Anti-slip, biodegradable.',
@@ -152,7 +154,7 @@ const products = [
     image: 'https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=600&q=80',
     badge: 'Premium',
     category: 'Fitness',
-  },
+  },*/
   // ── Drinkware ──
   {
     id: 17,
@@ -168,7 +170,7 @@ const products = [
     name: 'Bamboo Travel Mug',
     desc: 'Leak-proof bamboo exterior travel mug with silicone lid. 350ml.',
     price: '₹549',
-    image: 'https://images.unsplash.com/photo-1514228742587-6b1558fcca3d?auto=format&fit=crop&w=600&q=80',
+    image: bambooTravelMug,
     badge: 'New',
     category: 'Drinkware',
   },
